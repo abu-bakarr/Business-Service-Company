@@ -1,0 +1,100 @@
+.banner .slide img {
+    max-height: 1% !important;
+}
+
+.banner .slides h3 {
+    margin-left: 35%;
+    margin-top: 15%;
+}
+
+.container p,
+h5 {
+    text-align: justify;
+    font-size: 1em;
+    font-style: normal;
+    padding: 10px;
+    margin-top: -2% !important;
+}
+
+#com-value-content li,
+#com-value {
+    list-style: initial !important;
+    margin-left: -18%;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin-top: -2% !important;
+}
+
+.team h5 {
+    font-size: 1em !important;
+    margin-top: -2% !important;
+}
+
+.team p {
+    margin-top: -3% !important;
+    font-size: 0.85em;
+}
+
+#service-content li {
+    font-size: 0.9em !important;
+    /* padding: 0px 0px 5px 20px; */
+    text-align: justify;
+    margin-top: 1% !important;
+    list-style: initial !important;
+}
+
+#service-content {
+    font-size: 1em !important;
+    padding: 0px 0px 5px 20px;
+    text-align: justify;
+    margin-top: 1% !important;
+}
+
+.team-word {
+    background-color: rgb(0, 0, 0, 0.2);
+    width: 40%;
+}
+
+.contact-details {
+    width: 100%;
+}
+
+.contact-mssg {
+    height: 30%;
+}
+
+.contact-form {
+    background: transparent;
+}
+
+#con-info {
+    margin-top: -5%;
+}
+
+.map iframe {
+    width: 100% !important;
+    height: 80%;
+}
+
+.banner-contact li img {
+    margin-top: -1.4%;
+    height: 45% !important;
+    width: 100% !important;
+}
+
+.parallax-container {
+    background-color: rgba(132, 113, 241, 0.116);
+    height: 30% !important;
+}
+
+#line {
+    width: 15%;
+    background-color: rgb(146, 146, 165);
+    border-style: double;
+    margin-top: -3%;
+    margin-left: 43%;
+}
+
+.caption h3 {
+    margin-top: 15% !important;
+}

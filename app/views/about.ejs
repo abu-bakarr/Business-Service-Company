@@ -1,0 +1,19 @@
+<head>
+    <% include partials/templates/head.ejs %>
+</head>
+
+<body id="<%= pageID %>">
+    <!-- header template-->
+    <% include partials/templates/web-header.ejs %>
+
+        <!-- including contents -->
+        <% include partials/contents/about.ejs %>
+
+            <!-- including the footer template -->
+            <% include partials/templates/footer.ejs %>
+
+                <!-- including the js scripts template -->
+                <% include partials/templates/jsscripts.ejs %>
+</body>
+
+</html>

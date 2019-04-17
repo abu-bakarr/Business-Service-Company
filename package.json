@@ -1,0 +1,19 @@
+{
+    "name": "bsc",
+    "version": "1.0.0",
+    "description": "Business Service company",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon -e css, ejs, js, json app"
+    },
+    "author": "Green Living",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "mongoose": "^5.4.23",
+        "nodemon": "^1.18.10"
+    }
+}

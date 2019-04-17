@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <% include partials/templates/head.ejs %>
+</head>
+
+<body id="<%= pageID %>">
+    <!-- header template-->
+    <% include partials/templates/web-header.ejs %>
+
+        <!--including slider images-->
+        <% include partials/contents/slide-images.ejs %>
+
+            <!--include caption rows-->
+            <% include partials/contents/caption.ejs %>
+
+                <!--include caption rows-->
+                <% include partials/contents/faq.ejs %>
+
+                    <!-- including the footer template -->
+                    <% include partials/templates/footer.ejs %>
+
+                        <!-- including the js scripts template -->
+                        <% include partials/templates/jsscripts.ejs %>
+</body>
+<!-- including the footer template -->
+
+</html>
