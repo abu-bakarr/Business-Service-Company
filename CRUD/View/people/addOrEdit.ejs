@@ -1,0 +1,70 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/materialize.min.css">
+<link rel="stylesheet" href="/iconfont/material-icons.css">
+<link rel="stylesheet" href="/css/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title></title>
+
+
+
+<div class="contact-form">
+    <br>
+    <!-- <div class="divider"></div> -->
+    <form autocomplete="off" action="/people" method="post">
+        <div class="row center">
+            <div class="card col m6 push-m3">
+                <h3 class="center header">
+                    <%= viewTitle %>
+                </h3>
+                <div class="input-field">
+                    <input type="hidden" name="_id" placeholder="name" value="<%= peoples._id %>">
+                </div>
+                <div class="input-field">
+                    <i class=" tiny material-icons prefix">account_circle</i>
+                    <input type="text" name="name" placeholder="name" value="<%= peoples.name %>">
+                    <label for="name"></label>
+                    <div class="red-text">
+
+                    </div>
+                </div>
+                <div class="input-field">
+                    <i class=" tiny material-icons prefix">email</i>
+                    <label for="Email"></label>
+                    <input type="text" name="email" placeholder="Email" value="<%= peoples.email %>" required>
+                    <div class="red-text">
+
+                    </div>
+                </div>
+                <div class="input-field">
+                    <i class=" tiny material-icons prefix">add_location</i>
+                    <label for="Location"></label>
+                    <input type="text" name="location" placeholder="Location" value="<%= peoples.location %>">
+                </div>
+                <div class="input-field">
+                    <i class=" tiny material-icons prefix">phone</i>
+                    <label for="Phone"></label>
+                    <input type="text" name="phone" placeholder="Phone" value="<%= peoples.phone %>">
+                </div>
+                <div class="input-field">
+                    <i class=" tiny material-icons prefix">img</i>
+                    <label for="file"></label>
+                    <input type="file" name="phone" placeholder="Image">
+                </div>
+                <div class="input-field">
+                    <i class=" tiny material-icons prefix">announcement</i>
+                    <textarea id="textarea1" name="message" placeholder="Message here" class="materialize-textarea"></textarea>
+                    <label for="textarea1"></label>
+                </div>
+                <input class="btn center btn-extend blue " type="submit" value="send">
+                <a href="/list" class="blue btn push-m1"><i class=" material-icons"></i>View List</a>
+                <br>
+                <div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

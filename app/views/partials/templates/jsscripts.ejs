@@ -23,7 +23,7 @@
         $('.datepicker').datepicker();
         $('.slider').slider({
             indicators: false,
-            interval: 5000,
+            interval: 3000,
             height: 450
         });
 
@@ -37,7 +37,9 @@
             hoverEnabled: false
         });
 
-
+        $('.tabs').tabs({
+            responsiveThreshold: true
+        });
 
     });
 

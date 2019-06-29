@@ -1,5 +1,13 @@
 module.exports = {
 
+    me: (req, res) => {
+        res.send(`request for ${req.query.name}`);
+    },
+    name: (req, res) => {
+        res.send(`this is name ${req.params.name}`);
+    },
+
+    // Do not touch this
     index: (req, res) => {
         res.render('index', {
             pageTitle: "Home Page",
@@ -25,6 +33,9 @@ module.exports = {
             pageID: "services"
         });
     },
+    sas: (req, res) => {
+        res.send("hello from sas ");
+    },
     industry: (req, res) => {
         res.render('industry', {
             pageTitle: "Industry Page",
@@ -48,11 +59,11 @@ module.exports = {
             pageTitle: "Contact Page",
             pageID: "contact"
         });
-        res.json({
-            confirm: "success",
-            data: req.body,
-            msg: "Hello"
-        });
+        // res.json({
+        //     confirm: "success",
+        //     data: req.body,
+        //     msg: "Hello"
+        // });
 
     }
 

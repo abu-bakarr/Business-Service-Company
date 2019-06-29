@@ -1,0 +1,63 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/materialize.min.css">
+<link rel="stylesheet" href="/iconfont/material-icons.css">
+<link rel="stylesheet" href="/css/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title></title>
+<div class="container">
+    <br>
+
+    <div class="row">
+        <div class="card-panel col m10 push-m1">
+            <table class="striped table">
+                <div class="row">
+                    <h4 class="center header">
+                        <%= viewTitle %>
+                    </h4>
+                    <a href="/people" class="blue btn push-m1"><i class=" material-icons">add</i>New Record</a>
+                </div>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Location</th>
+                        <th>Phone</th>
+                        <th>Message</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% peoples.forEach(function (people) { %>
+                        <tr>
+                            <td class="black-text">
+                                <%= people.name %>
+                            </td>
+                            <td>
+                                <%= people.email %>
+                            </td>
+                            <td>
+                                <%= people.location %>
+                            </td>
+                            <td>
+                                <%= people.phone %>
+                            </td>
+                            <td>
+                                <%= people.message %>
+                            </td>
+                            <td>
+                                <a href="/people/<%= people._id %>"><i class="material-icons">details</i></a>
+                                <a href="/people/delete/<%= people._id %>" onclick="return confirm('Are you sure you want to delete this record');
+                               "><i class="material-icons">delete</i></a>
+                            </td>
+                        </tr>
+
+                        <% }); %>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -5,6 +5,13 @@ var router = express.Router();
 
 var defaultController = require('../Controller/defaultController');
 
+router.route('/me')
+    .get(defaultController.me);
+
+router.route('/me/:name')
+    .get(defaultController.name);
+
+//Do not touch this below
 router.route('/')
     .get(defaultController.index);
 
