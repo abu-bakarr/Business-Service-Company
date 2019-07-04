@@ -19,13 +19,13 @@
   //  });
 
   //connecting Locally People to Learning Mongo DB
-  mongoose.connect('mongodb://localhost:27017/learning_mongo', { useNewUrlParser: true })
-      .then(res => {
-          console.log('Mongo db connected');
-      })
-      .catch(err => {
-          console.log('cannot connect', err);
-      });
+  //   mongoose.connect('mongodb://localhost:27017/learning_mongo', { useNewUrlParser: true })
+  //       .then(res => {
+  //           console.log('Mongo db connected');
+  //       })
+  //       .catch(err => {
+  //           console.log('cannot connect', err);
+  //       });
 
 
   //setting up a view engine

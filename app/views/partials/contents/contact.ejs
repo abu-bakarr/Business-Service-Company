@@ -19,54 +19,58 @@
         </div>
         <div class="row">
             <div class="col s12 m4">
-                <img src="images/image-gallery/5.jpg" width="400" height="650" class="responsive-img" alt="">
-                <h5><i class="material-icons small">home</i>Address:</h5>
-                <ul id="con-info">
-                    <li>Business Services Company (BSC) Limited</li>
-                    <li>31 Savage Avenue</li>
-                    <li>Hastings, Freetown</li>
-                    <li>Sierra Leone.</li>
-                </ul>
-                <br>
-                <h5><i class="material-icons small">email</i>Email:</h5>
-                <ul id="con-info">
-                    <li><a href="#">info@bsc.sl</a></li>
-                </ul>
-                <br>
-                <h5><i class="material-icons small">phone</i>Telephone:</h5>
-                <ul id="con-info">
-                    <li>+232 76 965 867</li>
-                    <li>+232 30 515 408</li>
-                </ul>
+                <img src="images/image-gallery/building.png" width="400" height="650" class="responsive-img" alt="">
+                
+                <div class="row">
+                    <!-- <i class="material-icons small prefix">home</i> -->
+                    <h5 class="contact-subHeading">Address</h5>
+                    <label class="contact-labels">Business Services Company (BSC) Limited</label>
+                    <br>
+                    <label class="contact-labels">31 Savage Avenue Hastings</label>
+                    <br>
+                    <label class="contact-labels">Freetown, Sierra Leone</label>
+                </div>
+                <div class="row">
+                    <!-- <i class="material-icons small prefix">email</i> -->
+                    <h5 class="contact-subHeading">Email</h5>
+                    <label class="contact-labels">info@bsc-sl.ltd</label>
+                </div>
+                <div class="row">
+                    <!-- <i class="material-icons small prefix">phone</i> -->
+                    <h5 class="contact-subHeading">Telephone</h5>
+                    <label class="contact-labels">+232 76 965 867</label> |
+                    <label class="contact-labels">+232 30 515 408</label>                
+                </div>
+                
             </div>
             <div class="col s12 m7 push-m1">
                 <div class="card-panel contact-form">
                     <!-- <div class="divider"></div> -->
                     <form action="/contact" method="post">
                         <div class="row center">
-                            <h5 class="center green-text text-darken-1 card-title">Send us a message</h5>
+                            <h5 class="center gray-text lighten-3 card-title">Send us a message</h5>
                             <div class="input-field">
-                                <i class=" tiny material-icons prefix">account_circle</i>
+                                <i class=" tiny material-icons prefix blue-text">account_circle</i>
                                 <input type="text" name="name" id="" required>
                                 <label for="name">Name</label>
                             </div>
                             <div class="input-field">
-                                <i class=" tiny material-icons prefix">email</i>
+                                <i class=" tiny material-icons prefix blue-text">email</i>
                                 <label for="Email">Email</label>
                                 <input type="text" name="email" id="" required>
                             </div>
                             <div class="input-field">
-                                <i class=" tiny material-icons prefix">add_location</i>
+                                <i class=" tiny material-icons prefix blue-text">add_location</i>
                                 <label for="Location">Location</label>
                                 <input type="text" name="location" id="" required>
                             </div>
                             <div class="input-field">
-                                <i class=" tiny material-icons prefix">phone</i>
+                                <i class=" tiny material-icons prefix blue-text">phone</i>
                                 <label for="Phone">Phone</label>
                                 <input type="text" name="phone" id="" required>
                             </div>
                             <div class="input-field">
-                                <i class=" tiny material-icons prefix">announcement</i>
+                                <i class=" tiny material-icons prefix blue-text">announcement</i>
                                 <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
                                 <label for="textarea1">Message here !!!</label>
                             </div>

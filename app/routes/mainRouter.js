@@ -2,7 +2,6 @@
 var express = require('express');
 var router = express.Router();
 
-
 var defaultController = require('../Controller/defaultController');
 
 router.route('/me')
@@ -35,6 +34,6 @@ router.route('/career')
 
 router.route('/contact')
     .get(defaultController.contact)
-    .post(defaultController.contact);
+    .post(defaultController.contactPost);
 
 module.exports = router;
