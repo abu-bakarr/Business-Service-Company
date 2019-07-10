@@ -61,7 +61,7 @@ module.exports = {
         res.render('contact', {
             pageTitle: "Contact Page",
             pageID: "contact"
-        }); 
+        });
     },
     contactPost: (req, res) => {
         console.log(req.body);
@@ -84,7 +84,7 @@ module.exports = {
             secure: false, // true for 465, false for other ports
             auth: {
                 user: config.email, // generated ethereal user
-                pass: config.password// generated ethereal password
+                pass: config.password // generated ethereal password
             },
             tls: {
                 rejectUnauthorized: false
@@ -109,7 +109,7 @@ module.exports = {
             // Preview only available when sending through an Ethereal account
             console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
         });
-        
+
         res.redirect("/contact"); //redirecting the user
     }
 
