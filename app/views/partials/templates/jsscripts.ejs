@@ -18,6 +18,11 @@
         $('.sidenav').sidenav();
         $('select').formSelect();
 
+        //Disable full page
+        $('body').bind('cut copy paste', function(e) {
+            e.preventDefault();
+        });
+
 
         $('.collapsible').collapsible();
         $('.datepicker').datepicker();
