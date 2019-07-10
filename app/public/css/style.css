@@ -121,8 +121,8 @@ h5 {
     padding-top: 20px;
 }
 
-.tabs .tab {
-    color: blue
+.tabs .tab li a #mee {
+    color: blue !important;
 }
 
 .indust-content {
