@@ -112,6 +112,7 @@ h5 {
 .team-img {
     border-radius: 100%;
     height: 20% !important;
+    width: 90% !important;
 }
 
 .card-image img {
